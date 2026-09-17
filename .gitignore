@@ -22,6 +22,7 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Bb]uild/
 
 [Dd]ebug/x64/
 [Dd]ebugPublic/x64/
@@ -408,12 +409,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # VS Code files for those working on multiple tools
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+.vscode
 
 # Local History for Visual Studio Code
 .history/
@@ -427,3 +423,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+#let's not track that either.
+source/.vscode

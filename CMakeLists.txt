@@ -1,7 +1,12 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.20)
 project (hello_window VERSION 1.0.0)
 
 find_package(OpenGL REQUIRED)
+find_package(glfw3 REQUIRED)
+find_package(glad REQUIRED)
+find_package(glm REQUIRED)
+find_package(freetype REQUIRED)
+find_package(imgui REQUIRED)
 
 add_executable(hello_window source/config.h source/main.cpp source/glad.c)
 
